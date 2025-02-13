@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exlusive Content - Buzz</title>
 
     <!-- Basic Open Graph Properties -->
-    <meta property="og:title" content="Sensational Content Awaits!">
+    <meta property="og:title" content="Enter a World of Pleasure!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kute.in/">
-    <meta property="og:image" content="https://musfiq.me/cssandjs/landing/images/4.jpeg" alt="Sensational Content Awaits!">
-    <meta property="og:description" content="This is what you&#039;ve been waiting for. Click and explore the magic!">
-    
+    <meta property="og:image" content="https://musfiq.me/cssandjs/landing/images/1.jpeg">
+    <meta property="og:description" content="Unlock the secrets to your desires with just one tap!">
+
     <!-- Optional Open Graph Properties -->
     <meta property="og:determiner" content="the">
     <meta property="og:locale" content="en_US">
@@ -83,13 +84,35 @@
     <meta name="keywords" content="Exclusive Contents, Duckist, Buzz">
     <meta name="description" content="Access premium exclusive content. Click to explore now!">
 
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
+
 <body>
-  <script>
-        window.onload = function() {
-            const redirectUrl = "https://mechanicswindle.com/nmnk5si0?key=9dd23c5160f62339ad17ad2394d07281";
-            window.location.href = redirectUrl;
-        };
+    <script>
+        function checkExpiration() {
+            const expirationDate = "2025-03-15";
+            const today = new Date().toISOString().split("T")[0];
+
+            if (today > expirationDate) {
+                document.body.innerHTML = `
+                    <div style="display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f8d7da; color: #721c24; text-align: center; font-family: Arial, sans-serif;">
+                        <div style="padding: 20px; border: 2px solid #f5c6cb; background-color: #f8d7da; border-radius: 8px;">
+                            <h2>⚠️ Access Denied</h2>
+                            <p>This page is expired.</p>
+                            <p>Please renew your service or this page will remained inactive.</p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                const redirectUrl = "https://mechanicswindle.com/nmnk5si0?key=9dd23c5160f62339ad17ad2394d07281";
+                window.location.href = redirectUrl;
+            }
+        }
+        window.onload = checkExpiration;
     </script>
 </body>
+
 </html>
