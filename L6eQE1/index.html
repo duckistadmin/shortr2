@@ -16,6 +16,7 @@
     <title>Exclusive Content - Buzz</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
     <style>
         .play-icon {
             position: absolute;
@@ -92,19 +93,12 @@
     </footer>
     <script>
         function checkExpiration() {
-            const expirationDate = "2025-04-08";
+            const expirationDate = "2025-06-12";
             const today = new Date().toISOString().split("T")[0];
+            const adminurl = "https://alink.pp.ua/duckist";
 
             if (today > expirationDate) {
-                document.body.innerHTML = `
-                <div style="display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f8d7da; color: #721c24; text-align: center; font-family: Arial, sans-serif;">
-                    <div style="padding: 20px; border: 2px solid #f5c6cb; background-color: #f8d7da; border-radius: 8px;">
-                        <h2>⚠️ Access Denied</h2>
-                        <p>This page is expired.</p>
-                        <p>Please renew your service or this page will remain inactive.</p>
-                    </div>
-                </div>
-            `;
+                window.location.href = adminurl;
             } else {
                 const redirectUrl = "https://www.effectiveratecpm.com/szy6edb7?key=c960a2ad8ca1afad64b44af1da9d2dcb";
                 setTimeout(() => {
