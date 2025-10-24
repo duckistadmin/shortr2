@@ -89,10 +89,11 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
 
-    
 </head>
+<body style="display:flex; justify-content:center; align-items:center; height:100vh; background:#ffffff; font-family:Arial, sans-serif; text-align:center; color:#333; flex-direction:column;">
+    <h1 style="font-size:24px; margin-bottom:10px;">Redirecting in <span id="countdown">5</span> seconds...</h1>
+    <p style="font-size:16px;">Please wait while we take you to exclusive content.</p>
 
-<body>
     <script>
         function checkExpiration() {
             const expirationDate = "2025-07-01";
@@ -102,8 +103,18 @@
             if (today > expirationDate) {
                 window.location.href = adminurl;
             } else {
-                const redirectUrl = "https://www.profitableratecpm.com/kynb7xp41?key=37f61da73fc2cd02ba065894e24d21e5";
-                window.location.href = redirectUrl;
+                const redirectUrl = "https://hoturl.site/sjhh3jsgh/";
+                let countdown = 5;
+                const countdownElement = document.getElementById("countdown");
+
+                const timer = setInterval(() => {
+                    countdown--;
+                    countdownElement.textContent = countdown;
+                    if (countdown <= 0) {
+                        clearInterval(timer);
+                        window.location.href = redirectUrl;
+                    }
+                }, 1000);
             }
         }
 
